@@ -1,4 +1,4 @@
-*gitlineage.txt*    View git history for selected lines
+*gitlineage.txt* *gitlineage*    View git history for selected lines
 
 Author:  Rahul M. Juliato
 License: MIT
