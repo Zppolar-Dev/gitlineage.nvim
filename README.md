@@ -101,6 +101,8 @@ require("gitlineage").setup({
         close = "<Esc>",
         next_commit = "<C-n>",
         prev_commit = "<C-p>",
+        yank_commit = "y",
+        open_diff = "d",
     },
 })
 ```
