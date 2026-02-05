@@ -1,3 +1,5 @@
+![logo](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/logo.png)
+
 # gitlineage.nvim
 
 View git history for selected lines in Neovim.
