@@ -151,43 +151,6 @@ require("gitlineage").setup({
 | `yc`   | Yank commit SHA (on commit line)               |
 | `<CR>` | Open full commit diff (requires diffview.nvim) |
 
-## Testing locally
-
-### From your Neovim config (lazy.nvim)
-
-Point to your local directory:
-
-```lua
-{
-    "gitlineage.nvim",
-    dir = "~/Projects/github/git-history.nvim",
-    config = function()
-        require("gitlineage").setup()
-    end
-}
-```
-
-### From the project folder
-
-Add to your `init.lua` temporarily:
-
-```lua
-vim.opt.runtimepath:prepend("~/Projects/github/git-history.nvim")
-require("gitlineage").setup()
-```
-
-Or start Neovim with:
-
-```sh
-nvim --cmd "set rtp+=~/Projects/github/git-history.nvim" -c "lua require('gitlineage').setup()"
-```
-
-### Quick test
-
-1. Open a file tracked by git
-2. Select some lines in visual mode
-3. Run `:lua require('gitlineage').show_history()`
-
 ## Health check
 
 Verify your setup:
