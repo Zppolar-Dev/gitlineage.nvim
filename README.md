@@ -4,6 +4,34 @@ View git history for selected lines in Neovim.
 
 Select a range of lines in visual mode and see how they evolved through git commits using `git log -L`.
 
+## How it Works
+
+1. Select a range of lines in visual mode.
+
+   ![demo_1](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_1.png)
+
+2. Press `<leader>gl` (all bindings are customizable, see the Installation
+   section below). A new split window opens with the git history of the
+   selected lines.
+
+   ![demo_2](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_2.png)
+
+3. Advance through commits with `]c`.
+
+   ![demo_3](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_3.png)
+
+4. Quickly yank the commit SHA with `yc`.
+
+   ![demo_4](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_4.png)
+
+5. Go back to previous commits with `[c`.
+
+   ![demo_5](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_5.png)
+
+6. If `diffview.nvim` is installed, open the full commit diff by hitting `<CR>` on a commit line.
+
+   ![demo_6](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_6.png)
+
 ## Requirements
 
 **Required:**
